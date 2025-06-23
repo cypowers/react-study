@@ -1,18 +1,19 @@
 import "./Body.css";
 
 function Body() {
-    const numA = 1;
-    const numB = 2
-    const strA = "안녕";
-    const strB = "리액트";
-    const objA = { name: "홍길동" };
+    function handleClick(e){
+        console.log(e);
+        console.log("버튼이 클릭되었습니다.", e.target.name);
+    };
+
     return (
         <div className="body">
-            <h1>Body Content</h1>
-            <h2>Number: {numA + numB}</h2>
-            <h2>{objA.name}</h2><h2>{strA + strB}</h2>
+            <button onClick={handleClick} name="A Btn">Click Here1</button>
+            <button onClick={handleClick} name="B Btn">Click Here2</button>
         </div>
+            
     );
-}   
+}
+
 
 export default Body;
