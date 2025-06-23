@@ -6,7 +6,7 @@ import Body from './component/Body';
 function App() {
   const name = "홍길동";
   const BodyProps = {
-    name: "유지하",
+    name: "유지하1",
     location: "부천시",
     // favorList: ["영화", "음악", "독서"],
   };
