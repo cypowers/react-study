@@ -1,8 +1,9 @@
 import "./Body.css";
 import React, { useState } from 'react';
 
-function Viewer({ number }) {
-    return <div>{number %2 === 0? <h3>짝수</h3>: <h3>홀수</h3>}</div>;
+function Viewer() {
+    console.log("viewer updated")
+    return <div>Viewer</div>;
 }
 
 function Body() {
@@ -20,7 +21,7 @@ function Body() {
     return (
         <div className="body">
             <h2>{number}</h2>
-            <Viewer number={number} />
+            <Viewer />
             <button onClick={onIncrease}>+</button>
             <button onClick={onDecrease}>-</button>
         </div>
